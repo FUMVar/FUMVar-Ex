@@ -24,9 +24,16 @@ $ . ./venv/bin/activate
 ```
 
 ## Cuckoo sandbox execution
-cuckoo.py has to be run on another window before running FUMVar-Ex.py.
+You need to set 5 virtual machines for Cuckoo sandbox anaylsis. And run each code in cuckoo_setting for with different command window.
 ```
-(venv) $ python cuckoo.py
+(venv) $ cd cuckoo_setting
+(venv) $ python vbox.py
+```
+```
+(venv) $ python cuckoo_api.py
+```
+```
+(venv) $ python cuckoo_debug.py
 ```
 
 ## How to run
