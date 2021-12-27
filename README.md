@@ -43,7 +43,7 @@ $ vim vt_api_key
 
 #### insert your api key ####
 ```
-after insert VirusTotal api key. This is an example, these keys are not valid.
+After insert VirusTotal api key. This is an example, these keys are not valid.
 ```
 $ vim vt_api_key
 
@@ -51,6 +51,18 @@ sdfsafasdfhghjkhsadfghsajdfgjhasghjfdgasjhfghasjdgfjhasgfhjasgfj
 dfajshfkjsahfhjk1h32kj389yf8as9h12389dghfsa8fyh91huhfjksadhfjkhs
 ...
 ```
+
+Also, you have to add list of superset of each malware sample. A superset consists of field-value from Cuckoo sandbox report as you can see in the superset/sample.txt
+```
+$ vim superset/sample.txt
+
+name-antisandbox_idletime
+name-raises_exception
+name-injection_ntsetcontextthread
+name-removes_zoneid_ads
+api-GlobalMemoryStatusEx
+...
+
 You can see the information by running FUMVar with --help option.
 ```
 (venv) $ python FUMVar-Ex.py --help
