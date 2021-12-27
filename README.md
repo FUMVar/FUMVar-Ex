@@ -1,9 +1,9 @@
 # FUMVar
-We used python 3.5 version.
+We used python 3.6 version.
 
 ## Installation
 ```
-$ git clone https://github.com/JINBEOMJIN/FUMVar.git
+$ git clone https://github.com/JINBEOMJIN/FUMVar-Ex.git
 ```
 
 ## Requirements
@@ -45,9 +45,9 @@ dfajshfkjsahfhjk1h32kj389yf8as9h12389dghfsa8fyh91huhfjksadhfjkhs
 ```
 You can see the information by running FUMVar with --help option.
 ```
-(venv) $ python FUMVar.py --help
+(venv) $ python FUMVar-Ex.py --help
 
-usage: FUMVar.py [-h] -i INPUT_PATH -o OUTPUT_PATH [-p POPULATION]
+usage: FUMVar-Ex.py [-h] -i INPUT_PATH -o OUTPUT_PATH [-p POPULATION]
                  [-m PERTURBATION] [-g GENERATION] [-s SKIP]
 
 optional arguments:
@@ -64,7 +64,7 @@ optional arguments:
 
 ### Sample code for running and result
 ```
-(venv) $ python FUMVar.py -i sample/sample.exe -o result/result.txt -p 2 -g 200 -m 1 -s 1
+(venv) $ python FUMVar-Ex.py -i sample/sample.exe -o result/result.txt -p 2 -g 200 -m 1 -s 1
 * Scanning original malware sample
 
 Original file: sample/sample.exe
