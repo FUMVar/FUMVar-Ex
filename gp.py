@@ -270,46 +270,46 @@ class GP:
                     func+=1
 
                 with open(self.output_path,"a") as wf:
-                    # print ("* Member "+ str(i))
-                    # print ("Malware Functionality: "+ str(self.population[i].functional))
-                    # print ("VirusTotal detection rate: " + str(self.population[i].vt_result))
-                    # print ("Applied perturbations: " + str(self.population[i].pert))
-                    # print ("Previously applied perturbations: " + str(self.population[i].prev_pert))
-                    # print ("")
-                    wf.write("MD5, VT, Functinoal, ssdeep difference, perturbation list, previous perturbation list, VT detection list: "+ str(self.population[i].md5)+", "+str(self.population[i].vt_result)+", "+str(self.population[i].functional)+", "+str(self.population[i].diff)+", "+str(self.population[i].pert)+", "+str(self.population[i].prev_pert)+", "+str(self.population[i].vt_dlist)+"\n")
-                # print (self.population[i].score, self.population[i].vt_result, self.population[i].functional, self.population[i].diff, self.population[i].pert)
-            with open(self.output_path,"a") as wf:
-                wf.write("\n")
+                    print ("* Member "+ str(i))
+                    print ("Malware Functionality: "+ str(self.population[i].functional))
+                    print ("VirusTotal detection rate: " + str(self.population[i].vt_result))
+                    print ("Applied perturbations: " + str(self.population[i].pert))
+                    print ("Previously applied perturbations: " + str(self.population[i].prev_pert))
+                    print ("")
+                    # wf.write("MD5, VT, Functinoal, ssdeep difference, perturbation list, previous perturbation list, VT detection list: "+ str(self.population[i].md5)+", "+str(self.population[i].vt_result)+", "+str(self.population[i].functional)+", "+str(self.population[i].diff)+", "+str(self.population[i].pert)+", "+str(self.population[i].prev_pert)+", "+str(self.population[i].vt_dlist)+"\n")
+                print (self.population[i].score, self.population[i].vt_result, self.population[i].functional, self.population[i].diff, self.population[i].pert)
+            # with open(self.output_path,"a") as wf:
+            #     wf.write("\n")
 
             if func == self.size:
                 # print (self.output_path, "failed")
                 return
             
-            # print ("") 
+            print ("") 
         sgnum = int(self.generationnum) 
         for j in range(self.generationnum, gnum+1):
-            # print("* "+str(self.generationnum+1)+" generation\n")
-            if self.generationnum != sgnum:
-                with open(self.output_path,"a") as wf:
-                    wf.write(str(self.generationnum+1)+" generation\n")
-            # print (self.generationnum, "generation")
+            print("* "+str(self.generationnum+1)+" generation\n")
+            # if self.generationnum != sgnum:
+            #     with open(self.output_path,"a") as wf:
+            #         wf.write(str(self.generationnum+1)+" generation\n")
+            print (self.generationnum, "generation")
             start_time = time.time()
             self.mutate(0.3)
             self.selection(original)
             end_time = time.time() - start_time
             for i in range(self.size):
-                with open(self.output_path,"a") as wf:
-                    # print ("* Member "+ str(i))
-                    # print ("Malware Functionality: "+ str(self.population[i].functional))
-                    # print ("VirusTotal detection rate: " + str(self.population[i].vt_result))
-                    # print ("Applied perturbations: " + str(self.population[i].pert))
-                    # print ("Previously applied perturbations: " + str(self.population[i].prev_pert))
-                    # print ("")
-                    wf.write("MD5, VT, Functional, ssdeep difference, perturbation list, previous perturbation list, VT detection list: "+str(self.population[i].md5)+", "+str(self.population[i].vt_result)+", "+str(self.population[i].functional)+", "+str(self.population[i].diff)+", "+str(self.population[i].pert)+", "+str(self.population[i].prev_pert)+", "+str(self.population[i].vt_dlist)+"\n")
+                # with open(self.output_path,"a") as wf:
+                print ("* Member "+ str(i))
+                print ("Malware Functionality: "+ str(self.population[i].functional))
+                print ("VirusTotal detection rate: " + str(self.population[i].vt_result))
+                print ("Applied perturbations: " + str(self.population[i].pert))
+                print ("Previously applied perturbations: " + str(self.population[i].prev_pert))
+                print ("")
+                    # wf.write("MD5, VT, Functional, ssdeep difference, perturbation list, previous perturbation list, VT detection list: "+str(self.population[i].md5)+", "+str(self.population[i].vt_result)+", "+str(self.population[i].functional)+", "+str(self.population[i].diff)+", "+str(self.population[i].pert)+", "+str(self.population[i].prev_pert)+", "+str(self.population[i].vt_dlist)+"\n")
 
-                # print (self.population[i].score, self.population[i].vt_result, self.population[i].functional,self.population[i].diff, self.population[i].pert)
-            with open(self.output_path,"a") as wf:
-                wf.write("\n* takes "+str(end_time)+"\n\n")
+                print (self.population[i].score, self.population[i].vt_result, self.population[i].functional,self.population[i].diff, self.population[i].pert)
+            # with open(self.output_path,"a") as wf:
+                # wf.write("\n* takes "+str(end_time)+"\n\n")
             # print ("")
             self.generationnum += 1
 
