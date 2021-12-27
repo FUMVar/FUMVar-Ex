@@ -1,5 +1,5 @@
 # FUMVar-Ex
-We used python 3.6 version.
+This a extended framework from FUMVar (https://github.com/FUMVar/FUMVar).
 
 ## Installation
 ```
@@ -7,6 +7,7 @@ $ git clone https://github.com/FUMVar/FUMVar-Ex.git
 ```
 
 ## Requirements
+* python 3.6 version
 * ssdeep
 * lief
 * numpy
@@ -23,7 +24,7 @@ $ . ./venv/bin/activate
 ```
 
 ## Cuckoo sandbox execution
-cuckoo.py has to be run on another window before running FUMVar.py.
+cuckoo.py has to be run on another window before running FUMVar-Ex.py.
 ```
 (venv) $ python cuckoo.py
 ```
