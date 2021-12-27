@@ -1,0 +1,23 @@
+name-antisandbox_idletime
+name-raises_exception
+name-injection_ntsetcontextthread
+name-removes_zoneid_ads
+api-GlobalMemoryStatusEx
+name-privilege_luid_check
+name-checks_debugger
+name-injection_write_memory
+api-NtGetContextThread
+name-allocates_execute_remote_process
+short-NTFS File Attributes
+api-NtQuerySystemInformation
+name-allocates_rwx
+name-antisandbox_sleep
+api-CreateProcessInternalW
+name-dumped_buffer
+name-injection_resumethread
+api-LookupPrivilegeValueW
+name-injection_write_memory_exe
+name-antivm_memory_available
+name-injection_runpe
+short-Indicator Removal on Host
+name-network_http
