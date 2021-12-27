@@ -1,4 +1,4 @@
-# FUMVar
+# FUMVar-Ex
 We used python 3.6 version.
 
 ## Installation
