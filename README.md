@@ -3,7 +3,7 @@ We used python 3.6 version.
 
 ## Installation
 ```
-$ git clone https://github.com/JINBEOMJIN/FUMVar-Ex.git
+$ git clone https://github.com/FUMVar/FUMVar-Ex.git
 ```
 
 ## Requirements
